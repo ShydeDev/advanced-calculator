@@ -1,5 +1,5 @@
 # advanced-calculator
-Kind of advanced calculator made fully in c++
+Kind of advanced calculator that uses the latest methods possible, made fully in c++
 
 # Instalation
 You will need to install the latest version of Visual Studio 2022 to compile the project.
