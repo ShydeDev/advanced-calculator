@@ -54,8 +54,7 @@ int main() {
     if (op != 'S') {
         std::cout << "Enter two numbers: ";
         std::cin >> num1 >> num2;
-    }
-    else {
+    } else {
         std::cout << "Enter a number: ";
         std::cin >> num1;
         num2 = 0; // set num2 to 0 cuz you dont need a second number in square rooting
@@ -68,8 +67,7 @@ int main() {
         const auto formatted = std::format("{} {} {} = {}\n", num1, op, num2, result);
 
         std::cout << formatted;
-    }
-    catch (const std::exception& e) {
+    } catch (const std::exception& e) {
         std::cout << "Error: " << e.what() << "\n";
     }
 }
