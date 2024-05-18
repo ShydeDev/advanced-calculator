@@ -18,7 +18,6 @@ operation_t get_operation(char op) {
     case '*': return std::multiplies<>(); // multiplication op
     case '/': return [](double num1, double num2) { // division func
         if (num2 == 0) {
-            ;
             throw std::invalid_argument("Division by zero");
         }
         return num1 / num2;
