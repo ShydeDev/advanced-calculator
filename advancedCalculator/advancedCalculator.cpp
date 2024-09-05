@@ -40,7 +40,7 @@ int main() {
 	bool singleOp = false;
 
 	// loop until user enters a valid operator
-	while (strchr(supported_operators, op) == nullptr) {
+	do {
 		std::cout << "Enter an operator (";
 
 		for (uint8_t i = 0; i < sizeof(supported_operators) - 2; ++i) {
@@ -49,7 +49,7 @@ int main() {
 		std::cout << supported_operators[sizeof(supported_operators) - 2] << "): ";
 
 		std::cin >> op;
-	}
+	} while (strchr(supported_operators, op) == nullptr);
 
 	// Making an one number for factorial and square root
 	if (!strchr(single_operators, op)) {
